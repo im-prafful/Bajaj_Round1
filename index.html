@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Details</title>
+</head>
+<body onclick="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img id="slideImg" src="./assets/1.jpeg" alt="">
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h1>EMPLOYEE INSIGHTS</h1>
+                <h3>
+                    This is a comprehensive website that provides a centralized platform to showcase and manage employee data. With an intuitive
+                    user interface, it offers a visually appealing display of employee profiles, including details such as names,
+                    designations, skills, and projects. Search and filter functionalities enable easy navigation and efficient access to
+                    desired employee information.
+                </h3>
+                <div class="btn">
+                    <a href="#1"><button class="btn-1" type="button">Search</button></a>
+                    <a href="#2"><button class="btn-2" type="button">Employee</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="1">
+        <h1>Employee Data</h1>
+        <div id="filters">
+            <input type="text" id="searchInput" placeholder="Search by name">
+            <select id="designationFilter">
+                <option value="">All Designations</option>
+                <option value="Senior Developer">Senior Developer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Project Manager">Project Manager</option>
+            </select>
+            <select id="skillsFilter">
+                <option value="">All Skills</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Photoshop">Photoshop</option>
+                <option value="Manual Testing">Manual Testing</option>
+                <option value="SQL">SQL</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="2">
+        <div class="container1">
+            <div class="card1">
+                <div class="item">
+                    <div class="circle"></div>
+                    <img class="employee" src="./assets/employee1.png" alt="">
+                </div>
+                <div class="info">
+                    <h1 class="title1">Mr. A</h1>
+                    <h3>
+                        Senior Developer
+                    </h3>
+                    <h3>
+                        Skills:
+                        
+                        JavaScript
+                        Python
+                        Java
+                    </h3>    
+                    <div class="upload">
+                        <button class="uploadBtn">Projects</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="employeeContainer"></div>
+        <div id="projectContainer"></div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

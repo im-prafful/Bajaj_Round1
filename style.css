@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+#slideImg {
+    width: 100%;
+    height: 100%;
+    animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.3);
+    }
+
+    35% {
+        transform: scale(1);
+    }
+
+    85% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7));
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 35px auto;
+}
+
+.logo {
+    flex-basis: 15%;
+}
+
+.logo img {
+    width: 160px;
+    cursor: pointer;
+}
+
+.content {
+    width: 60%;
+    margin: 160px auto 0;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 60px;
+}
+
+.content h3 {
+    width: 80%;
+    margin: 20px auto 100px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.btn-1 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fe7250;
+    background: #fe7250;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.btn-1:hover {
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.btn-2 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.btn-2:hover {
+    background: #fe7250;
+    border: 2px solid #fe7250;
+}
+
+section {
+    margin: 15px 0 50px 0;
+    font-family: "Popins" sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#filters {
+    margin-bottom: 20px;
+}
+
+.employee-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.employee-card h2 {
+    margin: 0;
+}
+
+.employee-card p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+input[type="text"],
+select {
+    margin-right: 10px;
+}
+
+
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.projects-table th,
+.projects-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.projects-table th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.projects-table td {
+    vertical-align: middle;
+}
+
+.container1 {
+    margin-bottom: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    transform-style: preserve-3d;
+    min-height: 90vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+    margin-top: 30px;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.employee {
+    width: 18rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(to right,
+            rgba(245, 70, 65, 0.75),
+            rgba(8, 83, 156, 0.75));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info h1 {
+    margin-top: 30px;
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding-top: 1.5rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.upload {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+}
+
+.uploadBtn {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #fe7250;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
